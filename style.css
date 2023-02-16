@@ -134,31 +134,39 @@ td {
 }
 
 @media (max-width: 800px) {
-
   .leaderboard {
-    margin: 5rem auto;
-    max-width: 100%;
-    height: 100%;
+    margin: 9rem auto;
+    max-width: 100px;
+    max-inline-size: 305px;
+    
+  }
+
+  table {
     max-inline-size: 70%;
   }
-  table{
-    max-inline-size: 70%;
-  }
-  header{
+
+  header {
     max-inline-size: 100%;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    margin-left: 1rem;
-    top: 90px;
-  }
-  
-  img {
     height: 8rem;
-    right: -1rem;
-    bottom: -3rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    left: -2rem;
+    top: 1rem;   
+    
+    
+  }
+  nav a:first-child {
+    margin-left: 1rem ;
+  }
+
+  img {
+    height: 12rem;
+    bottom: -1rem;
+    left: 159px;
+
   }
   
   tbody{
@@ -185,14 +193,12 @@ td {
   }
 
   td {
-    
     padding: 0.5rem 0.5rem;
     max-width: 100px;
   }
   nav {
     font-size: 0.8rem;
   }
-
 }
 
 /* Regras de estilo para telas maiores ou iguais a 800px de largura */
