@@ -138,6 +138,7 @@ td {
     margin: 9rem auto;
     max-width: 100px;
     max-inline-size: 298px;
+    flex-direction: column;
     
   }
 
