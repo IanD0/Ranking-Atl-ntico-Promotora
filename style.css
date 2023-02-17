@@ -135,7 +135,7 @@ td {
 
 @media (max-width: 800px) {
   .leaderboard {
-    margin: 9rem auto;
+    margin: 3rem auto;
     max-width: 100px;
     max-inline-size: 298px;
     flex-direction: column;
