@@ -135,7 +135,7 @@ td {
 
 @media (max-width: 800px) {
   .leaderboard {
-    margin: 5rem auto;
+    margin: 3rem auto;
     max-width: 100px;
     max-inline-size: 298px;
     flex-direction: column;
@@ -145,15 +145,12 @@ td {
   }
 
 
-  table {
-    max-inline-size: 70%;
+  table { 
     width: 300px;
   }
 
   header {
-    flex-direction: column;
     height: 9rem;
-    width: 1%;
     text-align: left;
     width: 300px;
   }
