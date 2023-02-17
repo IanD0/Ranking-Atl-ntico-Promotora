@@ -1,113 +1,314 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="apple-touch-icon" type="image/png" href="PNG/LOGO-PNG.png">
-  <meta name="apple-mobile-web-app-title" content="CodePen">
-  <link class="icone" rel="shortcut icon" type="image/x-icon" href="PNG/LOGO-PNG.png">
-  <link rel="mask-icon" type="image/x-icon" href="https://imgur.com/a/QrTg2gi" color="#111">
-  <link rel="stylesheet" href="style.css">
+* {
   
-  <title>Ranking - Atlântico Promotora</title>
-  <style>
-    /* Adicione estilos personalizados aqui */
-  </style>
-</head>
-<body translate="no">
-  <div class="leaderboard">
-    <header>
-      <h1>Ranking Atlântico</h1>
-      <div class="logocirculo"></div>
-      <img src="PNG/LOGO-PNG.png" alt="" srcset="">
-      <nav>
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .leaderboard {
+    max-width: 0;
+    margin: 0 auto;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 16px 1px #aaa;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  header {
+    background-color: #00a4dd;
+    color: white;
+    text-transform: uppercase;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 14rem;
+    position: relative;
+  }
+  
+  .icone {
+    color: #00a4dd;
+    width: 200%;
+    height: 100%;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    position: absolute;
+    margin-left: 3rem;
+    top: 2rem;
+  }
+  
+  img {
+    height: 10rem;
+    position: absolute;
+    bottom: -90px;
+    right: -30px;
+  }
+  
+  nav {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    font-size: 1.3rem;
+    background: linear-gradient(to bottom, transparent, transparent 10%, rgba(22, 22, 22, 0.5));
+    
+  }
+  
+  nav a {
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+    display: inline-block;
+    font-weight: bold;
+  }
+  
+  nav a.active {
+    display: inline-flex;
+    border-bottom: 4px solid #f0a900;
+  }
+  
+  nav a:first-child {
+    margin-left: 2rem;
+  }
+  
+  nav a+a {
+      padding: 1rem;
+  }
+  
+  table {
+    background-color: #16181e;
+    color: #999;
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow: hidden;
+    height: 14rem;
+  }
+  
+  thead {
+    font-size: 1.2rem;
+    color: #555;
+    text-transform: uppercase;
+  }
+  
+  tbody .nick {
+    color: white;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+  
+  tbody tr:nth-child(2n) {
+    background-color: #1f232c;
+  }
+  
+  .nick {
+    text-align: left;
+  }
+  
+  .rank,
+  .sp,
+  .kd {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+  
+  .rank {
+    padding-left: 1rem;
+  }
+  
+  .sp,
+  .kd {
+    width: 8ch;
+  }
+  
+  th {
+    padding: 1.5rem 1rem 0.5rem;
+  }
+  
+  td {
+    padding: 1rem 1rem;
+  }
+  
+  @media (max-width: 800px) {
+    .leaderboard {
+      margin: 9rem auto;
+      max-width: 100px;
+      max-inline-size: 298px;
+      flex-direction: column;
       
-        <a href="" class="active">Comissões</a>
-        <a href="#modal" class="btn" id="total-link">Total</a>
-        <div id="modal" class="modal">
-          <div class="modal_content">
-            <h2 class="modal_title">Produção do mês</h2>
-            <p class="modal_description">Total: 15,008,20</p>
-            <a href="#" class="modal_link">Ok</a>
-          </div>
-          
-        </div>
-        
-        <a href="https://www.atlanticopromotora.com/" class="Site">Site</a>
-      </nav>
-    </header>
-    <table>
-      <thead>
-        <tr>
-          <th class="rank">Rank</th>
-          <th class="nick">Nome</th>
-          <th class="sp">COMISSÃO</th>
-          <th class="kd">RESTAM</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="rank">1</td>
-          <td class="nick">Leão</td>
-          <td class="sp">R$4,000</td>
-          <td class="kd">R$1,000</td>
-        </tr>
-        <tr>
-          <td class="rank">2</td>
-          <td class="nick">Peixe</td>
-          <td class="sp">R$4,000</td>
-          <td class="kd">R$2,000</td>
-        </tr>
-        <tr>
-          <td class="rank">4</td>
-          <td class="nick">Jaguar</td>
-          <td class="sp">R$4.108</td>
-          <td class="kd">R$2,100</td>
-        </tr>
-        <tr>
-          <td class="rank">5</td>
-          <td class="nick">Raposa</td>
-          <td class="sp">R$2.200</td>
-          <td class="kd">R$2.100</td>
-        </tr>
-        <tr>
-          <td class="rank">6</td>
-          <td class="nick">Tartaruga</td>
-          <td class="sp">R$2.190</td>
-          <td class="kd">R$3,000</td>
-        </tr>
-        <tr>
-          <td class="rank">7</td>
-          <td class="nick">Gato</td>
-          <td class="sp">R$1.708</td>
-
-          <td class="kd">R$2.900</td>
-        </tr>
-        <tr>
-          <td class="rank">8</td>
-          <td class="nick">Lobo</td>
-          <td class="sp">R$1.208</td>
-          <td class="kd">R$2.900</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    }
+  
+    table {
+      max-inline-size: 70%;
+      width: 300px;
+    }
+  
+    header {
+      flex-direction: column;
+      height: 9rem;
+      width: 1%;
+      text-align: left;
+      width: 305px;;
+    }
+  
+    h1 {
+      font-size: 2rem;
+      line-height: 2rem;
+      left: -2rem;
+      top: 1rem;   
+      
+      
+    }
+    nav a:first-child {
+      margin-left: 1rem ;
+    }
+  
+    img {
+      height: 12rem;
+      bottom: -1rem;
+      left: 159px;
+  
+    }
+    
+    tbody{
+      height: auto;
+    }
+    tr {
+      font-size: 0.8rem;
+    }
+    .rank{
+      font-size: 0.8rem;
+    }
+    .sp {
+      font-size: 0.8rem;
+    }
+    .kd {
+      font-size: 0.8rem;
+    }
+  
+    th {
+      padding: 1rem 0.5rem 0.5rem;
+    }
+    tbody .nick {
+      font-size: 0.8rem;
+    }
+  
+    td {
+      padding: 0.5rem 0.5rem;
+      max-width: 100px;
+    }
+    nav {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Regras de estilo para telas maiores ou iguais a 800px de largura */
+  
+  @media (min-width: 768px) {
+  
+    .leaderboard {
+      margin: 2rem auto;
+      max-width: 600px;
+      background-color: black;
+    }
+    
+    h1 {
+      font-size: 4rem;
+      line-height: 4rem;
+      margin-left: 2rem;
+    }
+    
+    img {
+      height: 22rem;
+      right: -5rem;
+      bottom: -3rem;
+    }
+    
+    tbody {
+      height: 600px;
+    }
+  
+    th {
+      padding: 1.5rem 1rem 0.5rem;
+    }
+  
+    td {
+      padding: 1rem 1rem;
+    }
+    
+    header {
+      height: 14rem;
+    }
+  
+  }
+     
+    /* Modal */
+    
+    .modal {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      max-width: 600px;
+      width: 100%;
+      height: auto;
+      place-content: center;
+      margin: 0 0px;
+      padding: 30px;
+      opacity: 1;
+      transition: .3s;
+      
+      
+      
+       
+  }
   
   
-  <script src="java.js"></script>
+    .modal_content{
+      background-color: #1f232c;
+      padding: 2rem 2rem 1rem;
+      border-radius: 4px;
+      border-top: .5rem solid #00a4dd;
+      
+      
+      
+      
+    }
+    .modal_title{
+      margin-bottom: 1rem;
+    }
+    .modal_link{
+      
+      justify-content: center;
+      align-items: center;
+      background-color: #555;
+      color: #fff;
+      padding: 0.7rem 3rem;
+      margin-top: 1rem;
+      border-radius: 4px;
   
-
-
+    }
   
-    </script>
-
-
-
-
-
-
-
-
-</body>
-
-</html>
+    .modal_link:hover{
+      background-color: #00a4dd;
+    }
+    .modal_link:active{
+      background-color: aqua;
+    }
+  
+    
+      
+    
+  
+  
+    
+   
+   
+      
+      
+    
+  
