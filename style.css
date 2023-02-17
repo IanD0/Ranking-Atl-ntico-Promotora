@@ -144,11 +144,15 @@ td {
 
   table {
     max-inline-size: 70%;
+    width: 300px;
   }
 
   header {
-    max-inline-size: 100%;
-    height: 8rem;
+    flex-direction: column;
+    height: 9rem;
+    width: 1%;
+    text-align: left;
+    width: 305px;;
   }
 
   h1 {
