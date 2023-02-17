@@ -208,7 +208,7 @@ td {
 
 /* Regras de estilo para telas maiores ou iguais a 800px de largura */
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
 
   .leaderboard {
     margin: 2rem auto;
