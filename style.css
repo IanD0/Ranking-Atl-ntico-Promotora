@@ -178,12 +178,14 @@ td {
     height: 9rem;
     
     text-align: left;
-    max-width: 305px;
+    max-width: 300px;
     
     
   }
   header, .table {
     max-width: fixed;
+    justify-content: center;
+    align-items: center;
   }
  
 
