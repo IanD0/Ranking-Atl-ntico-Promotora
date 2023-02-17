@@ -200,18 +200,21 @@ td {
 
 
   table { 
-    width: 300px;
+    
+    max-width: 300px;
   }
 
   header {
     height: 9rem;
     text-align: left;
-    width: 305px;
+    width: 310px;
   }
   header, .table {
-    max-width: center;
+    display: flex;
+    max-width: 306px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 
   h1 {
