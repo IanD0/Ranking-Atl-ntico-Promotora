@@ -162,6 +162,7 @@ td {
     min-width: 100%;
     box-shadow: none;
     position: fixed;
+    
      
   }
   
@@ -178,7 +179,7 @@ td {
     height: 9rem;
     
     text-align: left;
-    max-width: 300px;
+    max-width: 305px;
     
     
   }
@@ -186,6 +187,7 @@ td {
     max-width: fixed;
     justify-content: center;
     align-items: center;
+    
   }
  
 
@@ -239,6 +241,36 @@ td {
   nav {
     font-size: 0.8rem;
   }
+  .modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    max-width: 200px;
+    width: 100%;
+    height: auto;
+    place-content: center;
+    margin: 0 -28px;
+    padding: 30px;
+    opacity: 1;
+    transition: .3s;
+    
+    
+    
+    
+     
+}
+
+
+  .modal_content{
+    background-color: #1f232c;
+    padding: 2rem 2rem 1rem;
+    border-radius: 4px;
+    border-top: .5rem solid #00a4dd;
+    box-shadow: 2px 2px 16px 1px #04b8ff69;
+    transition: .3s;
+    
+    
 }
 
 /* Regras de estilo para telas maiores ou iguais a 800px de largura */
@@ -290,12 +322,13 @@ td {
     position: fixed;
     max-width: 600px;
     width: 100%;
-    height: auto;
+    height: 300px;
     place-content: center;
-    margin: 0 0px;
-    padding: 30px;
-    opacity: 1;
+    margin: 0 -30px;
+    padding: 20px;
     transition: .3s;
+    top: 190px;
+    
     
     
     
@@ -346,3 +379,4 @@ td {
     
     
   
+}
