@@ -142,18 +142,24 @@
       
     }
   
-    table {
-      max-inline-size: 70%;
-      width: 300px;
-    }
-  
-    header {
-      flex-direction: column;
-      height: 9rem;
-      width: 1%;
-      text-align: left;
-      width: 305px;;
-    }
+      table {
+    max-inline-size: 70%;
+    width: 300px;
+  }
+
+  header {
+    flex-direction: column;
+    height: 9rem;
+    width: 1%;
+    text-align: left;
+    width: 300px;
+  }
+  header, .table {
+    max-width: center;
+    justify-content: center;
+    align-items: center;
+  }
+
   
     h1 {
       font-size: 2rem;
