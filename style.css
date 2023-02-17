@@ -204,19 +204,7 @@ td {
   nav {
     font-size: 0.8rem;
   }
-  .modal {
-    margin: 0 -2px;
-
-     
-}
-
-
-  .modal_content{
-    box-shadow: 2px 2px 16px 1px #04b8ff69;
-    
-    
-    
-}
+  
 }
 
 /* Regras de estilo para telas maiores ou iguais a 800px de largura */
