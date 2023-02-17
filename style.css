@@ -210,6 +210,9 @@
     nav {
       font-size: 0.8rem;
     }
+    .modal {
+      margin: 0 -28px;
+    }
   }
   
   /* Regras de estilo para telas maiores ou iguais a 800px de largura */
