@@ -154,7 +154,7 @@ td {
   padding: 1rem 1rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .leaderboard {
     margin: 0rem auto;
     outline: none;
@@ -169,14 +169,21 @@ td {
 
   table {
     max-inline-size: 70%;
-    width: 300px;
+    max-width: 300px;
+    
   }
 
   header{
-    height: 9rem;
-    text-align: left;
-    width: 300px;
     
+    height: 9rem;
+    
+    text-align: left;
+    max-width: 305px;
+    
+    
+  }
+  header, .table {
+    max-width: fixed;
   }
  
 
