@@ -4,20 +4,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
 
-body {
-    background-image: url(PNG/iStock-943292690-1_1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+  width: 100%;
+  max-inline-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to left,#00a4dd, #66d9ff, #2ec1f1, #00adcc);
+  background-size: 500% 100%;
+  animation: degrade-animado 6s infinite ease alternate;
 }
 
+@keyframes degrade-animado{
+  0% {
+      background-position-x: 0%;
+  }
+  100%{
+      background-position-x: 100%;
+  }
+}
 .leaderboard {
   max-width: 0;
   margin: 0 auto;
   border-radius: 1rem;
-  box-shadow: 2px 2px 16px 1px #2cbff9;
+  box-shadow: 2px 2px 16px 1px #f4f4f5cb;
   font-family: 'Montserrat', sans-serif;
+  
 }
 
 a {
@@ -35,11 +48,6 @@ header {
   position: relative;
 }
 
-.icone {
-  color: #00a4dd;
-  width: 200%;
-  height: 100%;
-}
 
 h1 {
   font-size: 3rem;
@@ -146,7 +154,7 @@ td {
   justify-content: center;
   align-items: center;
   position: fixed;
-  max-width: 600px;
+  max-width: 506px;
   width: 100%;
   height: auto;
   place-content: center;
@@ -195,14 +203,12 @@ td {
 
 
 @media (max-width: 800px) {
+
+  
   .leaderboard {
-    margin: 3rem auto;
-    max-width: 100px;
-    max-inline-size: 298px;
-    flex-direction: column;
-    outline: none;
-    border: none;
-    
+    max-inline-size: 90%;
+    margin: 8rem;
+
   }
 
 
@@ -212,13 +218,13 @@ td {
   }
 
   header {
-    height: 9rem;
+    height: 8rem;
     text-align: left;
     width: 310px;
   }
   header, .table {
     display: flex;
-    max-width: 298px;
+    max-width: 306px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -289,7 +295,6 @@ td {
   .leaderboard {
     margin: 2rem auto;
     max-width: 600px;
-    background-color: black;
   }
   
   h1 {
@@ -299,9 +304,9 @@ td {
   }
   
   img {
-    height: 22rem;
-    right: -5rem;
-    bottom: -3rem;
+    height: 14rem;
+    right: -3rem;
+    bottom: 3rem;
   }
   
   tbody {
