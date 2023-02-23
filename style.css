@@ -5,11 +5,18 @@
   box-sizing: border-box;
 }
 
+body {
+    background-image: url(PNG/iStock-943292690-1_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
 .leaderboard {
   max-width: 0;
   margin: 0 auto;
   border-radius: 1rem;
-  box-shadow: 2px 2px 16px 1px #aaa;
+  box-shadow: 2px 2px 16px 1px #2cbff9;
   font-family: 'Montserrat', sans-serif;
 }
 
