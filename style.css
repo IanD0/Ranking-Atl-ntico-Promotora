@@ -11,7 +11,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(to left,#00a4dd, #66d9ff, #2ca9d3, #009bb6);
+  background-image: linear-gradient(to left,#00a4dd, #37ccfd, #2ca9d3, #77ebff);
   background-size: 500% 100%;
   animation: degrade-animado 6s infinite ease alternate;
 }
