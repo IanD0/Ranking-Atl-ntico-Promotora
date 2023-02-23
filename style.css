@@ -224,7 +224,7 @@ td {
   }
   header, .table {
     display: flex;
-    max-width: 306px;
+    max-width: 300px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
