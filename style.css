@@ -223,10 +223,13 @@ td {
   }
 
 
-  table { 
-    
-    max-width: 315px;
-    height: 0rem;
+ table {
+    max-width: 100%;
+    margin: 0 auto;
+    display: none;
+    background-color: #16181e;
+    border-radius: 1;
+    height: auto;
   }
   table.comissao.active  {
     margin-top: -25px;
