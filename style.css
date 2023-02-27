@@ -215,15 +215,11 @@ td {
 
 
 @media (max-width: 800px) {
-
-  
   .leaderboard {
-    max-inline-size: 90%;
-    margin: 8rem;
+    max-width: 90%;
+    margin: 8rem auto 2rem;
     box-shadow: none;
-    margin-left: 0rem;
-    
-
+    border-radius: 0;
   }
 
 
