@@ -29,12 +29,12 @@ body {
   }
 }
 .leaderboard {
-  margin: 4rem auto;
+  margin: 14rem auto;
   max-width: 600px;
   border-radius: 1rem;
   box-shadow: 2px 2px 16px 1px #0202025d;
   font-family: "Montserrat", sans-serif;
-  scale: 1.1;
+  scale: 1.5;
 }
 table {
   display: none;
@@ -192,7 +192,7 @@ td {
   }
   table#table-comissoes.comissao.active {
     justify-items: center;
-    height: 4rem;
+    height: 25rem;
   }
 
   table.active {
