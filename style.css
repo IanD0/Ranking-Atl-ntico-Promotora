@@ -274,6 +274,31 @@ nav {
 table td:last-child {
   width: 50px;
 }
+.dialogo {
+  position: absolute;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+table td:last-child button {
+  width: 30px;
+  height: 30px;
+  background-color: #505050;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+table td:last-child button:hover {
+  background-color: #00a4dd;
+}
+
+
 
 @media (min-width: 768px){
   img {
