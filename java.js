@@ -14,34 +14,32 @@ links.forEach(link => {
 
 /* Gráfico */
 
+const comissoesLink = document.getElementById("comissoes-link");
+const totalLink = document.getElementById("total-link");
+const tableComissoes = document.getElementById("table-comissoes");
+const tableTotal = document.getElementById("table-total");
 
-  // seleciona o link "Total" e o modal
-const totalLink = document.querySelector('#total-link');
-const modal = document.querySelector('#modal');
-const modalLink = document.querySelector('.modal_link');
-
-
-// adiciona um ouvinte de evento de clique ao link "Total"
-totalLink.addEventListener('click', function(event) {
-  event.preventDefault();
-  modal.style.display = 'block';
+comissoesLink.addEventListener("click", () => {
+  tableComissoes.classList.add("active");
+  tableTotal.classList.remove("active");
 });
 
-// adiciona um ouvinte de evento de clique ao botão "Ok"
-modalLink.addEventListener('click', function(event) {
-  event.preventDefault();
-  modal.style.display = 'none';
+totalLink.addEventListener("click", () => {
+  tableComissoes.classList.remove("active");
+  tableTotal.classList.add("active");
+});
+$(document).ready(function() {
+  $("#total-link").click(function() {
+    $("#table-total").addClass("active");
+    $("#table-comissoes").removeClass("active");
+  });
+
+  $("#comissoes-link").click(function() {
+    $("#table-comissoes").addClass("active");
+    $("#table-total").removeClass("active");
+  });
 });
 
-// Verifica se a classe "active" está presente no elemento "btn"
-if (btnElement.classList.contains('active')) {
-  modalElement.style.display = 'flex';
-} else {
-  modalElement.style.display = 'none';
-}
 
 
 
-
-
-  
