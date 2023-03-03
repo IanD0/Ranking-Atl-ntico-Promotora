@@ -76,11 +76,12 @@ h1 {
 }
 
 img {
-  padding: 9px 0px 0px 257px;
+    padding: 9px 0px 0px 257px;
     height: 20rem;
-    margin-left: 2rem;
-    margin-top: -8rem;
+    margin-left: 5rem;
+    margin-top: -9rem;
 }
+
 
 nav {
   width: 100%;
@@ -230,7 +231,7 @@ nav a:first-child {
 }
 
 img {
-  padding: 76px 0px 0px 148px;
+  padding: 86px 0px 0px 104px;
 }
 
 tbody {
