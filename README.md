@@ -4,7 +4,7 @@ Este é um exemplo de como criar um ranking usando HTML e CSS. Você pode usar e
 #### Visualização
 Aqui está um exemplo de como o ranking pode ser visualizado:
 
-![Ranking](https://user-images.githubusercontent.com/116680072/229256456-6fe33f6a-113c-4130-a900-decce09781bb.png)![raking 2](https://user-images.githubusercontent.com/116680072/229256842-1e324ce8-fb71-4bb9-8267-10f1d73f484d.png)
+![Ranking](https://user-images.githubusercontent.com/116680072/229256456-6fe33f6a-113c-4130-a900-decce09781bb.png)![raking 2](https://user-images.githubusercontent.com/116680072/229256920-579722f3-6a7d-4d1b-954e-eb61c2b52511.png)
 
 
 
@@ -20,4 +20,3 @@ Você pode personalizar o ranking de acordo com as suas preferências. Aqui est�
 Altere as cores dos elementos do ranking, como fundo, cabeçalho, linhas, etc.
 Adicione colunas para informações adicionais, como pontuação, número de vitórias, etc.
 Use imagens para adicionar um toque pessoal ao ranking.
-
